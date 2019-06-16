@@ -1,0 +1,19 @@
+<h2>Samplepacks</h2>
+ 
+<div *ngFor="let samplePack of samplePacks">
+ 
+  <h3>
+    <a [title]="samplePack.name">
+      {{ samplePack.name }}
+    </a>
+  </h3>
+ 
+  <p *ngIf="product.downloadCount">
+    Downloads: {{ product.downloadCount }}
+  </p>
+ 
+  <button (click)="download()">
+    download
+  </button>
+ 
+</div>
