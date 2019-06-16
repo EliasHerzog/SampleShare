@@ -3,7 +3,7 @@
 <div *ngFor="let samplePack of samplePacks">
  
   <h3>
-    <a [title]="samplePack.name" [routerLink]="['/samples', {{samplePack.id}}]">
+    <a [title]="samplePack.name" [routerLink]="['/samples', samplePack.id]">
       {{ samplePack.name }}
     </a>
   </h3>
