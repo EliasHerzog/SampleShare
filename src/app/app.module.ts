@@ -14,6 +14,7 @@ import { SamplesComponent } from './samples/samples.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: SamplePackListComponent },
+      { path: 'samples/:samplePackId', component: SamplesComponent },
     ])
   ],
   declarations: [
