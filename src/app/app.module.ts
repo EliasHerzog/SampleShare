@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { SamplePackListComponent } from './Samplepacks-list/samplePacks-list.component';
+import { SamplePackListComponent } from './samplePacks-list/samplePacks-list.component';
 
 @NgModule({
   imports: [
