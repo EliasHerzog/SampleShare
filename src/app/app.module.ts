@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule }    from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SamplePackListComponent } from './samplePacks-list/samplePacks-list.component';
@@ -15,7 +17,8 @@ import { SamplesComponent } from './samples/samples.component';
     RouterModule.forRoot([
       { path: '', component: SamplePackListComponent },
       { path: 'samples/:samplePackId', component: SamplesComponent },
-    ])
+    ]),
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
